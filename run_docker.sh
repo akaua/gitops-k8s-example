@@ -12,4 +12,4 @@ docker images
 
 # Step 3: 
 # Run flask app
-docker run -dt -p 8000:80 predict_app
+docker run -dt -p 8000:80 --name predict predict_app

@@ -1,0 +1,16 @@
+[2019-10-02 01:18:50,988] INFO in app: JSON payload: 
+ {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2019-10-02 01:18:50,992] INFO in app: Inference payload DataFrame: 
+    CHAS  ...  LSTAT
+0     0  ...   4.98
+
+[1 rows x 6 columns]
+[2019-10-02 01:18:51,008] INFO in app: Scaling Payload: 
+    CHAS  ...  LSTAT
+0     0  ...   4.98
+
+[1 rows x 6 columns]
+[2019-10-02 01:18:51,030] INFO in app: Prediction: 
+ <Response 48 bytes [200 OK]>
+172.17.0.1 - - [02/Oct/2019 01:18:51] "POST /predict HTTP/1.1" 200 -
+

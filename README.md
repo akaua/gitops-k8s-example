@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/akaua/gitops-k8s.svg?style=svg)](https://circleci.com/gh/akaua/gitops-k8s)
 
 ## Project Overview
 

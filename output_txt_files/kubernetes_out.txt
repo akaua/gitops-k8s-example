@@ -1,5 +1,13 @@
-NAME                        READY     STATUS    RESTARTS   AGE
-predict_app-57bd59fdc9-rgh6z   1/1       Running   0          3m
+NAME                                   READY   STATUS    RESTARTS   AGE
+predict-app-dcb689bd7-6ds6v            1/1     Running   0          69s
+Port:
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+

@@ -10,6 +10,7 @@ dockerpath=akaua/predict_app
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login
 docker tag predict_app $dockerpath
 
 # Step 3:

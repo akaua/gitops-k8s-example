@@ -3,9 +3,9 @@ pipeline {
     stages {
         
         stage('Dependencies') {
-            agent {
-                docker { image 'python:3.7.3-stretch' }
-            }
+            // agent {
+            //     docker { image 'python:3.7.3-stretch' }
+            // }
             steps {
                 sh 'echo teste'
             }

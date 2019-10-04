@@ -31,9 +31,9 @@ pipeline {
         }
         stage('Push image') {
             steps {
-                node {
+                script {
                     checkout scm
-                    predictImage = docker.build("predict_app:${env.BUILD_ID}", "./Dockerfile")
+                    def predictImage = docker.build("predict_app:${env.BUILD_ID}", "./Dockerfile")
                     predictImage.push()
 
                     predictImage.push('latest')

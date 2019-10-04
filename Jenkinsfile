@@ -31,10 +31,12 @@ pipeline {
         }
         stage('Push image') {
             steps {
-                def predictImage = docker.build("predict_app:${env.BUILD_ID}", "./Dockerfile")
-                predictImage.push()
+                node {
+                    def predictImage = docker.build("predict_app:${env.BUILD_ID}", "./Dockerfile")
+                    predictImage.push()
 
-                predictImage.push('latest')
+                    predictImage.push('latest')
+                }
             }
         }
     }

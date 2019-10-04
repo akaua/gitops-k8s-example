@@ -33,10 +33,12 @@ pipeline {
             steps {
                 script {
                     
-                    def predictImage = docker.build("akaua/predict_app:${env.BUILD_ID}", ". -f ./Dockerfile")
-                    predictImage.push()
+                    // def predictImage = docker.build("akaua/predict_app:${env.BUILD_ID}", ". -f ./Dockerfile")
+                    // predictImage.push()
 
-                    predictImage.push('latest')
+                    // predictImage.push('latest')
+                    def predictImage = docker.build("akaua/predict_app:latest", ". -f ./Dockerfile")
+                    predictImage.push()
                 }
             }
         }

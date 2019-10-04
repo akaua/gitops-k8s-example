@@ -37,6 +37,10 @@ pipeline {
                     def predictImage = docker.build("akaua/predict_app:latest", ". -f ./Dockerfile")
                     predictImage.push()
                     // predictImage.push("akaua/predict_app")
+
+                    // withDockerRegistry([ credentialsId: "akaua", url: "" ]) {
+                    //     bat "docker push devopsglobalmedia/teamcitydocker:build"
+                    // }
                 }
             }
         }

@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script {
                     
-                    def predictImage = docker.build("predict_app:${env.BUILD_ID}", "./Dockerfile .")
+                    def predictImage = docker.build("predict_app:${env.BUILD_ID}", ". -f ./Dockerfile")
                     predictImage.push()
 
                     predictImage.push('latest')

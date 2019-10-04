@@ -39,5 +39,16 @@ pipeline {
                 }
             }
         }
+
+        stage('Deploy k8s') {
+            steps {
+                timeout(5) {
+                    input message: "Deploy to prod?", ok: "Deploy"
+                }
+                sh 'kubectl rollout restart deployments/predict-app'
+                sh 'kubectl get pods'
+
+            }
+        }
     }
 }

@@ -38,7 +38,7 @@ pipeline {
 
                     // predictImage.push('latest')
                     def predictImage = docker.build("akaua/predict_app:latest", ". -f ./Dockerfile")
-                    predictImage.push()
+                    predictImage.push("akaua/predict_app")
                 }
             }
         }

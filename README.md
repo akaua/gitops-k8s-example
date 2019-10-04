@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/akaua/gitops-k8s.svg?style=svg)](https://circleci.com/gh/akaua/gitops-k8s)
+[![CircleCI](https://circleci.com/gh/akaua/gitops-k8s-example.svg?style=svg)](https://circleci.com/gh/akaua/gitops-k8s-example)
 
 ## Project Overview
 

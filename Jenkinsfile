@@ -32,7 +32,7 @@ pipeline {
         stage('Push image') {
             steps {
                 script {
-                    checkout scm
+                    
                     def predictImage = docker.build("predict_app:${env.BUILD_ID}", "./Dockerfile")
                     predictImage.push()
 

@@ -27,6 +27,9 @@ pipeline {
             // }
         }
         stage('Lint') {
+            agent {
+                docker { image 'python:3.7.3-stretch' }
+            }
             steps {
                 sh 'python3 -m venv venv'
                 sh '. venv/bin/activate'
